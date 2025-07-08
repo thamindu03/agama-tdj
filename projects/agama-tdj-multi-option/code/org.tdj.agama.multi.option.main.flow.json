@@ -488,7 +488,7 @@
 				"width": 170,
 				"height": 123
 			},
-			"selected": true
+			"selected": false
 		},
 		{
 			"id": "finishNode-d6503137-cd38-4afd-a3c3-0f667ad5be23",
@@ -1019,7 +1019,7 @@
 					"assignments": [
 						{
 							"variableTypeCheck": true,
-							"assignmentExpression": "Invalid username or password. Try again.",
+							"assignmentExpression": "\"Invalid username or password. Try again.\"",
 							"assignedVariableName": "uiFeedback.errorMessage"
 						}
 					],
@@ -1037,7 +1037,7 @@
 				"width": 170,
 				"height": 123
 			},
-			"selected": false,
+			"selected": true,
 			"dragging": false
 		},
 		{
