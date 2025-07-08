@@ -16,11 +16,11 @@ When choice.method is "basic"
           //  Validate credentials
           isValid = Call otpService validateCreds credentials.username credentials.password
           When isValid is true
-               it_oraoj = {success:true, data: { userId: "as9233Qz", property1: "value1"}}
-               Finish it_oraoj
+               it_gqomg = {success:true, data: { userId: "as9233Qz", property1: "value1"}}
+               Finish it_gqomg
           uiFeedback.errorMessage = "Invalid username or password. Try again."
-     it_nhely = {success:false, error: "Max attempts exceeded"}
-     Finish it_nhely
+     it_vnjzq = {success:false, error: "Max attempts exceeded"}
+     Finish it_vnjzq
 When choice.method is "sms"
      Repeat 3 times max
           //  Get mobile number
@@ -30,11 +30,12 @@ When choice.method is "sms"
           When username is not null
                otpResult = Trigger org.gluu.agama.sms.otp otpService username phoneInput
                When otpResult.success is true
-                    Finish {
+                    it_suezd = {success:true, data: { userId: "as9233Qz", property1: "value1"}}
+                    Finish it_suezd
                Finish with
           uiFeedback.errorMessage = "Invalid or unregistered phone number. Try again."
-     it_wtirv = {success:false, error: "Max attempts exceeded"}
-     Finish it_wtirv
+     it_yfobg = {success:false, error: "Max attempts exceeded"}
+     Finish it_yfobg
 //  Default fallback
-it_jqmao = {success:false, error: "Unknown authentication method"}
-Finish it_jqmao
+it_qdalk = {success:false, error: "Unknown authentication method"}
+Finish it_qdalk
