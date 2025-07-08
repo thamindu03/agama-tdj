@@ -434,7 +434,7 @@
 				"width": 170,
 				"height": 123
 			},
-			"selected": true,
+			"selected": false,
 			"dragging": false
 		},
 		{
@@ -859,7 +859,7 @@
 					"assignments": [
 						{
 							"variableTypeCheck": true,
-							"assignmentExpression": "Invalid or unregistered phone number. Try again.",
+							"assignmentExpression": "\"Invalid or unregistered phone number. Try again.\"",
 							"assignedVariableName": "uiFeedback.errorMessage"
 						}
 					],
@@ -877,7 +877,7 @@
 				"width": 170,
 				"height": 123
 			},
-			"selected": false,
+			"selected": true,
 			"dragging": false
 		},
 		{
@@ -1394,8 +1394,8 @@
 		}
 	],
 	"viewport": {
-		"x": -409.5845232805277,
-		"y": -193.48504202230941,
-		"zoom": 0.5
+		"x": -1020.2828571067937,
+		"y": 205.53387566840416,
+		"zoom": 0.5734651749994712
 	}
 }
