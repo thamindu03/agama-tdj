@@ -1,4 +1,4 @@
-Flow org.tdj.agama.multi.option.main.flow
+Flow org.tdj.agama.multi.option.main
      Basepath ""
      Timeout 600 seconds
      Configs conf
