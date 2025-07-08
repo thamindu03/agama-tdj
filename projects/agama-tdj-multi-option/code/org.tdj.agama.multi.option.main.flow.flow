@@ -19,7 +19,7 @@ When choice.method is "basic"
                Log "@info Basic authentication successful"
                Finish {
           Log "@warn Invalid credentials provided"
-          uiFeedback.errorMessage = Invalid username or password. Try again.
+          uiFeedback.errorMessage = "Invalid username or password. Try again."
      Finish {
 When choice.method is "sms"
      Repeat 3 times max
