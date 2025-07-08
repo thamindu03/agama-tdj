@@ -1,0 +1,23 @@
+//  Start subflow for user otp code validation
+Flow org.gluu.agama.sms.otp
+     Basepath ""
+     Inputs otpService username maskedPhone
+//  Declare a variable for UI feedback messages.
+otpUiFeedback = {}
+otpUiFeedback.maskedPhone = maskedPhone
+otpUiFeedback.username = username
+otpUiFeedback.infoMessage = An OTP code has been send to you on your mobile phone.
+//  Try collecting the OTP code from the UI for maximum x(3) times.
+Repeat 3 times max
+     //  Show UI to collect OTP code from user.
+     otpCreds = RRF "otp.ftlh" otpUiFeedback
+     //  Validate the OTP code provided by the user.
+     otpValidationResult = Call otpService validateOTPCode username otpCreds.code
+     //  If otp validation was successful
+     When otpValidationResult is true
+          //  OTP flow completed successfully.
+          Finish otpValidationResult
+     //  Provide feedback to user on invalid code
+     otpUiFeedback.errorMessage = The provided code is not valid.
+//  OTP validation has failed.
+Finish otpValidationResult
