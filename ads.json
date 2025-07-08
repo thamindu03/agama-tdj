@@ -14,7 +14,8 @@
         ],
         "noDirectLaunch": [],
         "configs": {
-            "org.tdj.agama.multi.option.main.flow": {}
+            "org.tdj.agama.multi.option.main.flow": {},
+            "org.gluu.agama.sms.otp": {}
         },
         "name": "agama-tdj-multi-option"
     }
