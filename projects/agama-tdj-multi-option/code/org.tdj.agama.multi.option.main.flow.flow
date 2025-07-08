@@ -1,0 +1,40 @@
+Flow org.tdj.agama.multi.option.main.flow
+     Basepath ""
+     Timeout 600 seconds
+     Configs conf
+//  UI feedback object
+uiFeedback = {}
+//  Load service instance
+otpService = Call org.gluu.agama.sms.OTPService#getInstance conf
+//  Ask user to choose authentication method
+choice = RRF "choose-auth-method.ftlh" uiFeedback
+//  Expected input: choice.method == "basic" or "sms"
+When choice.method is "basic"
+     Repeat 3 times max
+          //  Get username & password
+          credentials = RRF "login-basic.ftlh" uiFeedback
+          //  Validate credentials
+          isValid = Call otpService validateCreds credentials.username credentials.password
+          When isValid is true
+               it_kaums = {success:true, data: { userId: "as9233Qz", property1: "value1"}}
+               Finish it_kaums
+          uiFeedback.errorMessage = Invalid username or password. Try again.
+     it_ojsyx = {success:false, error: "Max attempts exceeded"}
+     Finish it_ojsyx
+When choice.method is "sms"
+     Repeat 3 times max
+          //  Get mobile number
+          phoneInput = RRF "login-sms.ftlh" uiFeedback
+          // Check valid user exists with the number
+          username = Call otpService isExistingUser phoneInput
+          When username is not null
+               otpResult = Trigger org.gluu.agama.sms.otp otpService username phoneInput
+               When otpResult.success is true
+                    Finish {
+               Finish with
+          uiFeedback.errorMessage = Invalid or unregistered phone number. Try again.
+     it_pfgvi = {success:false, error: "Max attempts exceeded"}
+     Finish it_pfgvi
+//  Default fallback
+it_djeot = {success:false, error: "Unknown authentication method"}
+Finish it_djeot
