@@ -416,7 +416,7 @@
 				"width": 170,
 				"height": 123
 			},
-			"selected": true,
+			"selected": false,
 			"dragging": false
 		},
 		{
@@ -895,7 +895,9 @@
 			"measured": {
 				"width": 110,
 				"height": 60
-			}
+			},
+			"selected": false,
+			"dragging": false
 		},
 		{
 			"id": "finishNode-1eb31f5f-a5c9-40c7-a064-43ce9919b63b",
@@ -921,8 +923,8 @@
 					"hasComment": false,
 					"comment": "",
 					"flowfilename": "",
-					"returnVariable": "{",
-					"finishMode": "withVariable",
+					"returnVariable": "{ userId: \"as9233Qz\", property1: \"value1\"}",
+					"finishMode": "withSuccess",
 					"nodeIcon": "material-symbols:line-end-square-rounded",
 					"previousNodeId": "whenNode-97579bfb-ae9f-49b2-8f86-c65c73c48905"
 				}
@@ -930,7 +932,8 @@
 			"measured": {
 				"width": 170,
 				"height": 123
-			}
+			},
+			"selected": true
 		},
 		{
 			"id": "finishNode-44d44b2f-b84f-4798-aaac-0d513bde36b0",
@@ -1651,8 +1654,8 @@
 		}
 	],
 	"viewport": {
-		"x": -1229.0796316334272,
-		"y": -337.47315483217335,
+		"x": -1781.0796316334272,
+		"y": -629.4731548321733,
 		"zoom": 0.7191897967256649
 	}
 }
