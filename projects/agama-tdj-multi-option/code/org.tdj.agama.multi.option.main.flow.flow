@@ -16,11 +16,11 @@ When choice.method is "basic"
           //  Validate credentials
           isValid = Call otpService validateCreds credentials.username credentials.password
           When isValid is true
-               it_decef = {success:true, data: { userId: "as9233Qz", property1: "value1"}}
-               Finish it_decef
+               it_oraoj = {success:true, data: { userId: "as9233Qz", property1: "value1"}}
+               Finish it_oraoj
           uiFeedback.errorMessage = "Invalid username or password. Try again."
-     it_juqyd = {success:false, error: "Max attempts exceeded"}
-     Finish it_juqyd
+     it_nhely = {success:false, error: "Max attempts exceeded"}
+     Finish it_nhely
 When choice.method is "sms"
      Repeat 3 times max
           //  Get mobile number
@@ -32,9 +32,9 @@ When choice.method is "sms"
                When otpResult.success is true
                     Finish {
                Finish with
-          uiFeedback.errorMessage = Invalid or unregistered phone number. Try again.
-     it_khvqa = {success:false, error: "Max attempts exceeded"}
-     Finish it_khvqa
+          uiFeedback.errorMessage = "Invalid or unregistered phone number. Try again."
+     it_wtirv = {success:false, error: "Max attempts exceeded"}
+     Finish it_wtirv
 //  Default fallback
-it_kfoir = {success:false, error: "Unknown authentication method"}
-Finish it_kfoir
+it_jqmao = {success:false, error: "Unknown authentication method"}
+Finish it_jqmao
