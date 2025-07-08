@@ -1,0 +1,47 @@
+Flow org.tdj.agama.multi.option.main.flow
+    Basepath ""
+    Timeout 600 seconds
+    Configs conf
+
+// UI feedback object
+uiFeedback = {}
+
+// Load service instance
+otpService = Call org.gluu.agama.sms.OTPService#getInstance conf
+
+// Ask user to choose authentication method
+choice = RRF "choose-auth-method.ftlh" uiFeedback
+// Expected input: choice.method == "basic" or "sms"
+
+When choice.method is "basic"
+    Repeat 3 times max
+        // Get username & password
+        credentials = RRF "login-basic.ftlh" uiFeedback
+        // Validate credentials
+        isValid = Call otpService validateCreds credentials.username credentials.password
+        When isValid is true
+            Log "@info Basic authentication successful"
+            Finish { success: true, method: "basic", userId: credentials.username }
+        Log "@warn Invalid credentials provided"
+        uiFeedback.errorMessage = "Invalid username or password. Try again."
+    Finish { success: false, error: "Basic authentication failed" }
+
+When choice.method is "sms"
+    Repeat 3 times max
+        // Get username & password
+        credentials = RRF "login.ftlh" uiFeedback
+        // Validate credentials
+        isValid = Call otpService validateCreds credentials.username credentials.password
+        When isValid is true
+            maskedPhone = Call otpService sendOTPCode credentials.username
+            When maskedPhone is not null
+                otpResult = Trigger org.gluu.agama.sms.otp otpService credentials.username maskedPhone
+                When otpResult.success is true
+                    Finish { success: true, method: "sms", userId: credentials.username }
+                Finish { success: false, error: "OTP validation failed" }
+            Finish { success: false, error: "Phone number not registered" }
+        uiFeedback.errorMessage = "Invalid username or password. Try again."
+    Finish { success: false, error: "SMS authentication failed" }
+
+// Default fallback
+Finish { success: false, error: "Invalid authentication method selected" }
