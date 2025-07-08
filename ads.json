@@ -1,1 +1,18 @@
-{}
+{
+    "agama-tdj-multi-option": {
+        "projectName": "agama-tdj-multi-option",
+        "description": "Multi Option Authentication Flow",
+        "type": "community",
+        "author": "thamindu03",
+        "version": "0.0.1",
+        "authorWebsite": "https://github.com/thamindu03/agama-tdj",
+        "githubUri": "https://github.com/thamindu03/agama-tdj",
+        "license": "apache-2.0",
+        "lastUpdated": "1751949872071",
+        "tags": [
+            "authentication"
+        ],
+        "noDirectLaunch": [],
+        "configs": {}
+    }
+}
