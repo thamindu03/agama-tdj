@@ -361,8 +361,8 @@
 			"id": "logNode-6392a5dd-8f44-47cb-b1e1-dba341cc8379",
 			"type": "logNode",
 			"position": {
-				"x": 2280,
-				"y": 830
+				"x": 2276.430911741361,
+				"y": 951.3490007937255
 			},
 			"data": {
 				"id": "logNode-6392a5dd-8f44-47cb-b1e1-dba341cc8379",
@@ -389,14 +389,16 @@
 			"measured": {
 				"width": 170,
 				"height": 123
-			}
+			},
+			"selected": false,
+			"dragging": false
 		},
 		{
 			"id": "finishNode-9a37ba1d-c893-42e3-a574-b8b31d0bd912",
 			"type": "finishNode",
 			"position": {
-				"x": 2530,
-				"y": 830
+				"x": 2551.4145295518338,
+				"y": 1063.7752809408537
 			},
 			"data": {
 				"id": "finishNode-9a37ba1d-c893-42e3-a574-b8b31d0bd912",
@@ -414,15 +416,17 @@
 					"hasComment": false,
 					"comment": "",
 					"flowfilename": "",
-					"returnVariable": "{",
-					"finishMode": "withVariable",
+					"returnVariable": "{ userId: \"as9233Qz\", property1: \"value1\"}",
+					"finishMode": "withSuccess",
 					"nodeIcon": "material-symbols:line-end-square-rounded"
 				}
 			},
 			"measured": {
 				"width": 170,
 				"height": 123
-			}
+			},
+			"selected": true,
+			"dragging": false
 		},
 		{
 			"id": "logNode-89ff4c69-2ea0-4105-b9e0-a6fb7fff049e",
@@ -1046,7 +1050,7 @@
 				"width": 170,
 				"height": 123
 			},
-			"selected": true,
+			"selected": false,
 			"dragging": false
 		},
 		{
@@ -1657,8 +1661,8 @@
 		}
 	],
 	"viewport": {
-		"x": -695.2030094814722,
-		"y": -54.17697844250847,
-		"zoom": 0.5603672016680997
+		"x": -1194.3284761651444,
+		"y": -422.22290866008893,
+		"zoom": 0.7578582776888433
 	}
 }
