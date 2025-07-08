@@ -17,8 +17,8 @@ When choice.method is "basic"
           isValid = Call otpService validateCreds credentials.username credentials.password
           When isValid is true
                Log "@info Basic authentication successful"
-               it_dlehp = {success:true, data: { userId: "as9233Qz", property1: "value1"}}
-               Finish it_dlehp
+               it_uppyw = {success:true, data: { userId: "as9233Qz", property1: "value1"}}
+               Finish it_uppyw
           Log "@warn Invalid credentials provided"
           uiFeedback.errorMessage = "Invalid username or password. Try again."
      Finish {
@@ -33,7 +33,8 @@ When choice.method is "sms"
                When maskedPhone is not null
                     otpResult = Trigger org.gluu.agama.sms.otp otpService credentials.username maskedPhone
                     When otpResult.success is true
-                         Finish {
+                         it_lkyyh = {success:true, data: { userId: "as9233Qz", property1: "value1"}}
+                         Finish it_lkyyh
                     Finish {
                Finish {
           uiFeedback.errorMessage = "Invalid username or password. Try again."
