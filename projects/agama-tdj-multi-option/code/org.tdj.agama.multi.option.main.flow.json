@@ -496,7 +496,7 @@
 				"width": 170,
 				"height": 123
 			},
-			"selected": true,
+			"selected": false,
 			"dragging": false
 		},
 		{
@@ -1028,7 +1028,7 @@
 					"assignments": [
 						{
 							"variableTypeCheck": true,
-							"assignmentExpression": "Invalid username or password. Try again.",
+							"assignmentExpression": "\"Invalid username or password. Try again.\"",
 							"assignedVariableName": "uiFeedback.errorMessage"
 						}
 					],
@@ -1046,7 +1046,7 @@
 				"width": 170,
 				"height": 123
 			},
-			"selected": false,
+			"selected": true,
 			"dragging": false
 		},
 		{
@@ -1657,8 +1657,8 @@
 		}
 	],
 	"viewport": {
-		"x": -498.2030094814721,
-		"y": -0.17697844250852768,
+		"x": -695.2030094814722,
+		"y": -54.17697844250847,
 		"zoom": 0.5603672016680997
 	}
 }
