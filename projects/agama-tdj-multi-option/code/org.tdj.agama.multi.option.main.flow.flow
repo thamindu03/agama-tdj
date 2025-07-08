@@ -35,7 +35,7 @@ When choice.method is "sms"
                          Finish {
                     Finish {
                Finish {
-          uiFeedback.errorMessage = Invalid username or password. Try again.
+          uiFeedback.errorMessage = "Invalid username or password. Try again."
      Finish {
 //  Default fallback
 Finish {
