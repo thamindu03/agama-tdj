@@ -417,7 +417,7 @@
 					"assignments": [
 						{
 							"variableTypeCheck": true,
-							"assignmentExpression": "Invalid username or password. Try again.",
+							"assignmentExpression": "\"Invalid username or password. Try again.\"",
 							"assignedVariableName": "uiFeedback.errorMessage"
 						}
 					],
@@ -434,7 +434,7 @@
 				"width": 170,
 				"height": 123
 			},
-			"selected": false,
+			"selected": true,
 			"dragging": false
 		},
 		{
@@ -719,7 +719,7 @@
 				"width": 170,
 				"height": 123
 			},
-			"selected": true,
+			"selected": false,
 			"dragging": false
 		},
 		{
@@ -1394,8 +1394,8 @@
 		}
 	],
 	"viewport": {
-		"x": -1678.0311646941855,
-		"y": 83.87366870794233,
-		"zoom": 0.8402490483789097
+		"x": -409.5845232805277,
+		"y": -193.48504202230941,
+		"zoom": 0.5
 	}
 }
