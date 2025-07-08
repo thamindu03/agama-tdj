@@ -537,7 +537,7 @@
 				"width": 170,
 				"height": 123
 			},
-			"selected": true,
+			"selected": false,
 			"dragging": false
 		},
 		{
@@ -969,8 +969,8 @@
 					"hasComment": false,
 					"comment": "",
 					"flowfilename": "",
-					"returnVariable": "{",
-					"finishMode": "withVariable",
+					"returnVariable": "Invalid OTP",
+					"finishMode": "withFailure",
 					"nodeIcon": "material-symbols:line-end-square-rounded",
 					"previousNodeId": "whenNode-cc09e762-59f2-4c0d-9edc-94cd564f547f"
 				}
@@ -979,7 +979,7 @@
 				"width": 170,
 				"height": 123
 			},
-			"selected": false
+			"selected": true
 		},
 		{
 			"id": "finishNode-31e49827-a4e7-4b35-89d9-e886e0cda8a0",
@@ -1665,8 +1665,8 @@
 		}
 	],
 	"viewport": {
-		"x": -275.24273276805593,
-		"y": 52.55232442060776,
-		"zoom": 0.5
+		"x": -2453.158885991777,
+		"y": -695.1916685255092,
+		"zoom": 0.9019448543057123
 	}
 }
