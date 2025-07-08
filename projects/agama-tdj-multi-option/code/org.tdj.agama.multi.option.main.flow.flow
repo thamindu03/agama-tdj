@@ -17,11 +17,12 @@ When choice.method is "basic"
           isValid = Call otpService validateCreds credentials.username credentials.password
           When isValid is true
                Log "@info Basic authentication successful"
-               it_uppyw = {success:true, data: { userId: "as9233Qz", property1: "value1"}}
-               Finish it_uppyw
+               it_fjnxt = {success:true, data: { userId: "as9233Qz", property1: "value1"}}
+               Finish it_fjnxt
           Log "@warn Invalid credentials provided"
           uiFeedback.errorMessage = "Invalid username or password. Try again."
-     Finish {
+     it_yfdgb = {success:false, error: "Max attempts exceeded"}
+     Finish it_yfdgb
 When choice.method is "sms"
      Repeat 3 times max
           //  Get username & password
@@ -33,8 +34,8 @@ When choice.method is "sms"
                When maskedPhone is not null
                     otpResult = Trigger org.gluu.agama.sms.otp otpService credentials.username maskedPhone
                     When otpResult.success is true
-                         it_lkyyh = {success:true, data: { userId: "as9233Qz", property1: "value1"}}
-                         Finish it_lkyyh
+                         it_fslnc = {success:true, data: { userId: "as9233Qz", property1: "value1"}}
+                         Finish it_fslnc
                     Finish {
                Finish {
           uiFeedback.errorMessage = "Invalid username or password. Try again."
