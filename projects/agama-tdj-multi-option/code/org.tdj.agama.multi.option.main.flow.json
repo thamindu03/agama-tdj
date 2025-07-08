@@ -824,7 +824,8 @@
 			"measured": {
 				"width": 110,
 				"height": 60
-			}
+			},
+			"selected": true
 		},
 		{
 			"id": "triggerNode-2120c635-2af0-45d3-a63b-ef5133bb3d1d",
@@ -979,7 +980,7 @@
 				"width": 170,
 				"height": 123
 			},
-			"selected": true
+			"selected": false
 		},
 		{
 			"id": "finishNode-31e49827-a4e7-4b35-89d9-e886e0cda8a0",
@@ -1005,8 +1006,8 @@
 					"hasComment": false,
 					"comment": "",
 					"flowfilename": "",
-					"returnVariable": "{",
-					"finishMode": "withVariable",
+					"returnVariable": "Phone number not found",
+					"finishMode": "withFailure",
 					"nodeIcon": "material-symbols:line-end-square-rounded",
 					"previousNodeId": "whenNode-7ae2e2d9-3709-4d38-9387-484f3b90140a"
 				}
@@ -1014,7 +1015,8 @@
 			"measured": {
 				"width": 170,
 				"height": 123
-			}
+			},
+			"selected": false
 		},
 		{
 			"id": "assignmentNode-e4a89b97-b331-4e6b-bc54-16ea17da9f63",
@@ -1665,8 +1667,8 @@
 		}
 	],
 	"viewport": {
-		"x": -2453.158885991777,
-		"y": -695.1916685255092,
-		"zoom": 0.9019448543057123
+		"x": -1125.1540379836376,
+		"y": -129.36960864153696,
+		"zoom": 0.5309569028261362
 	}
 }
