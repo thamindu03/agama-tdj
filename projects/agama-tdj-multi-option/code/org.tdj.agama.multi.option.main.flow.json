@@ -527,8 +527,8 @@
 					"hasComment": false,
 					"comment": "",
 					"flowfilename": "",
-					"returnVariable": "{",
-					"finishMode": "withVariable",
+					"returnVariable": "Max attempts exceeded",
+					"finishMode": "withFailure",
 					"nodeIcon": "material-symbols:line-end-square-rounded",
 					"previousNodeId": "repeatNode-9594f82e-b7d0-492a-a4f1-acd3cdd7e353"
 				}
@@ -537,7 +537,7 @@
 				"width": 170,
 				"height": 123
 			},
-			"selected": false,
+			"selected": true,
 			"dragging": false
 		},
 		{
@@ -979,7 +979,7 @@
 				"width": 170,
 				"height": 123
 			},
-			"selected": true
+			"selected": false
 		},
 		{
 			"id": "finishNode-31e49827-a4e7-4b35-89d9-e886e0cda8a0",
@@ -1665,8 +1665,8 @@
 		}
 	],
 	"viewport": {
-		"x": -2579.160348738791,
-		"y": -797.3516906633865,
-		"zoom": 0.9216061476829803
+		"x": -275.24273276805593,
+		"y": 52.55232442060776,
+		"zoom": 0.5
 	}
 }
