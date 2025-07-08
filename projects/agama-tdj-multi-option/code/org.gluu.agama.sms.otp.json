@@ -71,7 +71,7 @@
 						},
 						{
 							"variableTypeCheck": true,
-							"assignmentExpression": "An OTP code has been send to you on your mobile phone.",
+							"assignmentExpression": "\"An OTP code has been send to you on your mobile phone.\"",
 							"assignedVariableName": "otpUiFeedback.infoMessage"
 						}
 					],
@@ -87,7 +87,8 @@
 			"measured": {
 				"width": 170,
 				"height": 123
-			}
+			},
+			"selected": true
 		},
 		{
 			"id": "repeatNode-1dcbcfc1-acf8-4dbc-8c71-48f49ba8dcc0",
